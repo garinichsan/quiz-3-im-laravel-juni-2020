@@ -10,7 +10,7 @@ class ArtikelController extends Controller
     public function index()
     {
         $artikel = ArtikelModel::get_all();
-        return view('artikel', compact('artikel'));
+        return view('index', compact('artikel'));
     }
 
     public function create()
@@ -31,6 +31,7 @@ class ArtikelController extends Controller
 
     public function show($id){
         $artikel = ArtikelModel::find_by_id($id);
+        // dd($artikel);
         return view('show', compact('artikel'));
     }
 
