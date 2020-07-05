@@ -3,7 +3,7 @@
 @section('content')
 <a class="btn btn-primary mt-3 ml-3" href="/artikel/{{$artikel->id}}"> <i class="right fas fa-angle-left"></i> &nbsp Kembali ke Detail Artikel</a>
 
-<form role="form" class="mx-3" action="/artikel" method="POST">
+<form role="form" class="mx-3" action="/artikel/{{$artikel->id}}" method="POST">
     @csrf
     @method("PUT")
     <!-- text input -->
@@ -16,7 +16,7 @@
 
     <!-- tag input -->
     <label class="mt-3">Tag</label>
-    <input type="text" class="form-control mb-3" name="judul" value="{{$artikel->tag}}">
+    <input type="text" class="form-control mb-3" name="tag" value="{{$artikel->tag}}">
 
     <button class="btn btn-primary my-3" type="submit">Ubah</a>
 
