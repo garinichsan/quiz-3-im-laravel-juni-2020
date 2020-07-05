@@ -12,26 +12,40 @@
 
     <!-- /.card-header -->
     <div class="card-body p-0 ml-3 mt-3">
-    <table class="table table-striped" style="white-space: pre-wrap">
+    <table class="table table-striped text-gray-900" style="white-space: pre-wrap">
         <thead>
         <tr>
-            <th style="width: 10px">Id</th>
-            <th>Judul</th>
-            <th>Slug</th>
-            <th>Isi</th>
-            <th>Tag</th>
-            <th>Dibuat</th>
-            <th>Diperbaharui</th>
+            <th>Komponen</th>
+            <th>Detail</th>
         </tr>
-        </thead>
-        <tbody>
+    </thead>
+    <tbody>
         <tr>
+            <td style="width: 10px">Id</td>
             <td>{{$artikel->id}}</td>
+        </tr>
+        <tr>
+            <td>Judul</td>
             <td>{{$artikel->judul}}</td>
+        </tr>
+        <tr>
+            <td>Slug</td>
             <td>{{$artikel->slug}}</td>
+        </tr>
+        <tr>
+            <td>Isi</td>
             <td>{{$artikel->isi}}</td>
+        </tr>
+        <tr>
+            <td>Tag</td>
             <td>{{$artikel->tag}}</td>
+        </tr>
+        <tr>
+            <td>Dibuat</td>
             <td>{{$artikel->created_at}}</td>
+        </tr> 
+        <tr>
+            <td>Diperbaharui</td>
             <td>{{$artikel->updated_at}}</td>
         </tr>
         </tbody>
